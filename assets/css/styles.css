@@ -136,7 +136,7 @@ body {
 /* Under Construction */
 .construct {
     display: flex;
-    position: relative;
+    position: absolute;
     margin-left: 20px;
     padding: 20px;
     
