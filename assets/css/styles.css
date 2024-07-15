@@ -443,7 +443,7 @@ p {
     height: 250px;
     min-width: 50px;
     top: 67vh;
-    left: 97vw;
+    left: 95vw;
     z-index: 10;
     background-color: var(--frame-color);
 }
