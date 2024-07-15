@@ -134,14 +134,14 @@ body {
 }
 
 /* Under Construction */
-.construct {
+.logo-wrapper .construct {
     display: flex;
-    position: absolute;
+    position: relative;
     margin-left: 20px;
     padding: 20px;
     
 }
-.construct h3 {
+.logo-wrapper .construct h3 {
     font-family: "Lexend Deca", Arial, sans-serif;
     font-size: 0.5rem; 
     color: white;
