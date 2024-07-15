@@ -136,14 +136,13 @@ body {
 /* Under Construction */
 .logo-wrapper .construct {
     display: flex;
-    position: relative;
-    margin-left: 20px;
-    padding: 20px;
-    
+    position: absolute;  
 }
 .logo-wrapper .construct h3 {
+    position: inherit;
+    display: flex;
     font-family: "Lexend Deca", Arial, sans-serif;
-    font-size: 0.5rem; 
+    font-size: 1rem; 
     color: white;
 }
 
