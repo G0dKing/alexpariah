@@ -114,7 +114,9 @@ body {
 /* Logo */
 .logo-wrapper {
     position: absolute;
-    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     text-align: center;
     align-items: left;
     width: 100%;
@@ -129,6 +131,23 @@ body {
     margin: 20px;
     margin-bottom: 20px;
     z-index: 1;
+}
+
+/* Under Construction */
+.construct {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 50px;
+    width: 100%;
+}
+.construct h3 {
+    position: inherit;
+    display: flex;
+    font-family: "Lexend Deca", Arial, sans-serif;
+    font-size: 1rem;
+    color: white;
 }
 
 .logo img {
@@ -443,7 +462,7 @@ p {
     height: 250px;
     min-width: 50px;
     top: 67vh;
-    left: 95vw;
+    right: 0;
     z-index: 10;
     background-color: var(--frame-color);
 }

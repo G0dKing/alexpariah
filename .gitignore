@@ -38,3 +38,4 @@ app
 app/*
 dontpush
 index.backup.html
+backups
