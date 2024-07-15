@@ -114,7 +114,9 @@ body {
 /* Logo */
 .logo-wrapper {
     position: absolute;
-    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     text-align: center;
     align-items: left;
     width: 100%;
@@ -129,6 +131,20 @@ body {
     margin: 20px;
     margin-bottom: 20px;
     z-index: 1;
+}
+
+/* Under Construction */
+.construct {
+    display: flex;
+    position: relative;
+    margin-left: 20px;
+    padding: 20px;
+    
+}
+.construct h3 {
+    font-family: "Lexend Deca", Arial, sans-serif;
+    font-size: 0.5rem; 
+    color: white;
 }
 
 .logo img {
@@ -467,3 +483,4 @@ p {
 @media (min-width: 768px), (max-width: 1199px) {}
 
 @media (min-width: 1200px) {}
+
