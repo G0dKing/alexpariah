@@ -4,56 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
 
-/* Variables */
-:root {
-    --link-color: rgb(248, 231, 0);
-    --link-hover: #ff0000;
-    --link-shadow: #000;
-    --frame-color: rgba(102, 9, 133, 0.278);
-}
-
 /* Local Fonts */
-/* Loops Font */
-@font-face {
-    font-family: 'Loops';
-    src: url('../fonts/loops.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-/* Turntable Font */
-@font-face {
-    font-family: 'Turntable';
-    src: url('../fonts/turntable.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-/* Turntable Font Bold */
-@font-face {
-    font-family: 'Turntable Bold';
-    src: url('../fonts/turntable_bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-/* Wasted Font */
-@font-face {
-    font-family: 'Wasted';
-    src: url('../fonts/Mostwasted.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-/* Distort Font */
-@font-face {
-    font-family: 'Distort';
-    src: url('../fonts/DistorterDemoRegular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-/* Quantify Font */
 @font-face {
     font-family: 'Quantify';
     src: url('../fonts/Quantify.ttf') format('truetype');
@@ -61,20 +12,12 @@
     font-style: normal;
 }
 
-/* Urban Font */
-@font-face {
-    font-family: 'Urban';
-    src: url('../fonts/urban.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-/* Cardigan Font */
-@font-face {
-    font-family: 'Cardigan';
-    src: url('../fonts/cardigan.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
+/* Global Variables */
+:root {
+    --link-color: rgb(248, 231, 0);
+    --link-hover: #ff0000;
+    --link-shadow: #000;
+    --frame-color: rgba(102, 9, 133, 0.278);
 }
 
 /* Global Reset */
@@ -99,7 +42,7 @@ body {
     background: black;
 }
 
-/* Landing Page */
+/* Page Content */
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -110,7 +53,7 @@ body {
     color: rgb(249, 232, 0);
 }
 
-/* Banner */
+/* Banner Section */
 /* Logo */
 .logo-wrapper {
     position: absolute;
@@ -133,28 +76,12 @@ body {
     z-index: 1;
 }
 
-/* Under Construction */
-.construct {
-    display: flex;
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 50px;
-    width: 100%;
-}
-.construct h3 {
-    position: inherit;
-    display: flex;
-    font-family: "Lexend Deca", Arial, sans-serif;
-    font-size: 1rem;
-    color: white;
-}
-
 .logo img {
     max-width: 300px;
     width: 200px;
     height: auto;
 }
+
 /* Navigation Bar */
 .nav-wrapper {
     position: relative;
@@ -480,9 +407,50 @@ p {
     color: var(--link-hover);
 }
 
+/* Footer */
+footer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 2vh;
+    width: 100%;
+    height: 25px;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.copyright p {
+    display: flex;
+    margin: 2px;
+    padding: 5px;
+    font-family: "Lexend Deca";
+    font-size: 12px;
+    color: rgb(255, 251, 0);
+    text-shadow: 0px 2px 1px #000000,
+        0px -2px 5px rgb(0, 0, 0);
+}
+
+.construct p {
+    display: flex;
+    margin: 0;
+    font-family: "Lexend Deca";
+    font-size: 12px;
+    color: rgb(255, 251, 0);
+    text-shadow: 0px 2px 1px #000000,
+        0px -2px 5px rgb(0, 0, 0);
+}
+
+
+
+
 /* Responsive Layout */
-@media (min-width: 320px), (max-width: 767px) {}
+@media (min-width: 320px), (max-width: 479px) {}
 
-@media (min-width: 768px), (max-width: 1199px) {}
+@media (min-width: 480px), (max-width: 1279px) {}
 
-@media (min-width: 1200px) {}
+@media (min-width: 1280px), (max-width: 1919px) {}
+
+@media (min-width: 1920px) {}
