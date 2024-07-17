@@ -35,7 +35,7 @@ html, body {
     height: 100%;
     width: 100%;
     overflow-x: hidden;
-    overflow-y: hidden;
+    overflow-y: auto;
 }
 
 body {
@@ -44,12 +44,12 @@ body {
 
 /* Page Content */
 .wrapper {
+    position: relative;
     display: flex;
     flex-direction: column;
     max-width: 100%;
     height: 100%;
     width: 100%;
-    overflow: hidden;
     color: rgb(249, 232, 0);
 }
 
@@ -59,44 +59,34 @@ body {
     position: absolute;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    text-align: center;
+    justify-content: left;
+    text-align: left;
     align-items: left;
-    width: 100%;
+    width: 350px;
     left: 0;
-    z-index: 0;
-}
-
-.logo {
-    display: flex;
-    margin-left: 50vw;
-    padding: 20px;
-    margin: 20px;
-    margin-bottom: 20px;
-    z-index: 1;
+    top: 0;
+    z-index: 9;
 }
 
 .logo img {
     max-width: 300px;
     width: 200px;
     height: auto;
+
 }
 
 /* Navigation Bar */
 .nav-wrapper {
-    position: relative;
+    position: absolute;
     display: flex;
     margin-left: 50px;
     width: 100%;
-    justify-content: space-center;
+    justify-content: space-between;
     text-align: right;
     align-items: center;
     padding-right: 20px;
-    top: 2vh;
+    top: 0;
     left: 0;
-    z-index: 10;
-    font-family: 'Roboto', sans-serif;
-    overflow: auto;
 }
 
 .nav-wrapper .nav {
@@ -106,6 +96,7 @@ body {
     flex-direction: row;
     justify-content: center;
     text-align: center;
+    z-index: 8;
 }
 
 .nav-wrapper .nav ul {
@@ -114,31 +105,24 @@ body {
     width: 100%;
     padding-right: 90px;
     padding-left: 400px;
-    height: 50px;
+    height: 20px;
     text-align: center;
     flex-direction: row;
-    justify-content: space-evenly;
-    font-size: 1.2em;
-    gap: 60px;
-    background-color: var(--frame-color);
-}
-
-.nav-wrapper .nav li {
-    display: flex;
-    position: relative;
-    padding: 15px 0;
-    font-family: Cardigan;
+    justify-content: space-between;
+    font-size: 0.8em;
+    gap: 40px;
+    background-color: rgba(103, 0, 96, 0.449);
+    z-index: 7;
 }
 
 .nav-wrapper .nav a {
-    position: relative;
     display: flex;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.15em;
     color: rgb(237, 254, 0);
     transition: color 0.3s ease;
-    font-family: 'Cardigan', sans-serif;
+    font-family: 'Quantify', sans-serif;
     text-shadow: 0px 1px 1px, var(--link-shadow),
         1px 0px 1px var(--link-shadow),
         0px 2px 2px var(--link-shadow),
@@ -182,7 +166,7 @@ body {
     font-family: "Quantify", Arial, sans-serif;
     color: rgb(255, 255, 255);
     font-weight: 250;
-    font-size: 3rem;
+    font-size: 4em;
     line-height: 0.5;
     text-shadow: 0px 1px 1px #000000,
         0px -5px 2px rgb(0, 0, 0),
@@ -193,14 +177,13 @@ body {
 .text-2 {
     position: relative;
     opacity: 0;
-    margin-left: 450px;
+    margin-left: 45vw;
     display: flex;
-    justify-content: right;
     text-align: right;
     font-family: "Quantify", Arial, sans-serif;
     color: rgba(0, 0, 0, 0.804);
     font-weight: 250;
-    font-size: 3rem;
+    font-size: 4em;
     line-height: 0.5;
     text-shadow: -3px 1px 2px #ffffff,
         0px -3px 2px rgb(255, 255, 255),
@@ -218,14 +201,14 @@ body {
     padding: 10px;
     margin: 5px;
     opacity: 0;
-    top: 60vh;
+    top: 50vh;
     left: 5vw;
     font-family: "Quantify", sans-serif;
     color: rgb(0, 0, 0);
     background: none;
     border: none;
     font-weight: 200;
-    font-size: 4rem;
+    font-size: 6em;
     text-decoration: none;
     text-shadow: 0px 5px 1px #000000,
         0px -5px 2px rgb(145, 255, 0),
@@ -252,6 +235,15 @@ body {
 
 .glitch-2 a {
     color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+a:hover {
+    color: var(--link-hover);
 }
 
 @keyframes show {
@@ -378,7 +370,7 @@ p {
 
 /* Social Icons */
 .social-icons {
-    position: absolute;
+    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -408,7 +400,7 @@ p {
 }
 
 /* Footer */
-footer {
+.footer {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -449,7 +441,7 @@ footer {
 /* Responsive Layout */
 @media (min-width: 320px), (max-width: 479px) {}
 
-@media (min-width: 480px), (max-width: 1279px) {}
+
 
 @media (min-width: 1280px), (max-width: 1919px) {}
 
