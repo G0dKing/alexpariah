@@ -53,6 +53,12 @@ body {
     color: rgb(249, 232, 0);
 }
 
+h2 {
+    color: yellow;
+    font-family: "Lexend Deca";
+    font-size: 2em;
+}
+
 /* Banner Section */
 /* Logo */
 .logo-wrapper {

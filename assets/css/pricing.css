@@ -1,0 +1,125 @@
+.pricing .group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.pricing .grid-1-5 {
+  border: 2px solid #5d4e65;
+  min-height: 400px;
+  padding: 1.25em;
+  position: relative;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+@media screen and (min-width: 700px) {
+  .pricing .grid-1-5 {
+    float: left;
+    width: 50%;
+  }
+ .pricing .grid-1-5:nth-child(odd) {
+    clear: left;
+  }
+}
+@media screen and (min-width: 800px) {
+  .pricing .grid-1-5 {
+    width: 33.3333333%;
+  }
+ .pricing .grid-1-5:nth-child(3n+1) {
+    clear: left;
+  }
+  .pricing .grid-1-5:nth-child(odd) {
+    clear: none;
+  }
+}
+@media screen and (min-width: 1120px) {
+  .pricing .grid-1-5 {
+    width: 20%;
+  }
+ .pricing .grid-1-5:nth-child(odd),.pricing .grid-1-5:nth-child(3n+1) {
+    clear: none;
+  }
+}
+
+.pricing .grid-1-5:hover {
+  background-color: rgb(83, 69, 91);
+  border-top: 2px solid #ec7a37;
+  border-bottom: 2px solid #ff4f69;
+  box-shadow: 0px 0px 10px 0px rgb(50, 50, 50);
+  transform: scale(1.025);
+  z-index: 2;
+}
+.pricing .grid-1-5:hover:before, .pricing .grid-1-5:hover:after {
+  content: "";
+  position: absolute;
+  background-color: rgb(246, 125, 53);
+  top: -2px;
+  bottom: -2px;
+  width: 2px;
+}
+.pricing .grid-1-5:hover:before {
+  left: -2px;
+}
+.pricing .grid-1-5:hover:after {
+  right: -2px;
+}
+.pricing .grid-1-5:hover .pricing .button {
+  background-color: rgb(238, 122, 54);
+}
+
+.pricing h2, .pricing h3, .pricing p, .pricing ul {
+  margin: 0;
+}
+
+.pricing h2 {
+  font-size: 1em;
+  font-weight: 400;
+  margin: 0 0 0.5em;
+}
+
+.pricing h3 {
+  font-size: 1.5em;
+  letter-spacing: 0.0625em;
+  margin: 0 0 0.3333333333em;
+}
+
+.pricing p {
+  font-size: 0.875em;
+}
+
+.pricing p, .pricing ul {
+  margin: 0 0 1.5em;
+}
+
+.pricing ul {
+  color: #796583;
+  font-size: 0.75em;
+  list-style-type: none;
+  padding: 0;
+}
+.pricing ul .pricing li {
+  margin: 0 0 0.8333333333em;
+}
+
+.pricing .button {
+  background-color: #9c83aa;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 700;
+  padding: 0.75em 1.5em;
+  position: absolute;
+  bottom: 1.25em;
+  left: 50%;
+  margin-left: -60px;
+  text-decoration: none;
+  width: 120px;
+}
+
+.pricing .uppercase, .pricing .button, .pricing h2 {
+  text-transform: uppercase;
+}
+
+.pricing sup, .pricing .small {
+  font-size: 0.6125em;
+}
