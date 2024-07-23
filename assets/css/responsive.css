@@ -1,0 +1,90 @@
+/* responsive.css */
+
+/* Ensure the page scales properly on mobile devices */
+@media (max-width: 480px) {
+    html, body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Lexend Deca', sans-serif;
+    }
+
+    /* General styles */
+
+    .logo img {
+        width: 100%;
+    }
+
+    .nav-wrapper ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .nav-wrapper ul li a {
+        text-decoration: none;
+        color: #000;
+        font-size: 16px;
+        padding: 5px 2px;
+        display: block;
+    }
+
+    /* Hero section */
+    .hero {
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .hero .text, .hero .text-2 {
+        font-size: 18px;
+        margin: 5px 0;
+    }
+
+    .glitch a {
+        font-size: 24px;
+        margin: 0 2px;
+    }
+
+    .hero-image img {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+        .nav-wrapper ul {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .hero .text, .hero .text-2 {
+            font-size: 16px;
+        }
+
+        .glitch a {
+            font-size: 28px;
+        }
+
+    }
+
+    @media (max-width: 480px) {
+        .nav-wrapper ul {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .nav-wrapper ul li {
+            margin:0;
+        }
+
+        .hero .text, .hero .text-2 {
+            font-size: 14px;
+        }
+
+        .glitch a {
+            font-size: 18px;
+        }
+
+    }

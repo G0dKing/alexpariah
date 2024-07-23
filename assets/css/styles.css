@@ -386,7 +386,7 @@ p {
     padding: 0;
     height: 250px;
     min-width: 50px;
-    top: 67vh;
+    top: 50vh;
     right: 0;
     z-index: 10;
     background-color: var(--frame-color);
@@ -441,14 +441,4 @@ p {
         0px -2px 5px rgb(0, 0, 0);
 }
 
-
-
-
 /* Responsive Layout */
-@media (min-width: 320px), (max-width: 479px) {}
-
-
-
-@media (min-width: 1280px), (max-width: 1919px) {}
-
-@media (min-width: 1920px) {}
