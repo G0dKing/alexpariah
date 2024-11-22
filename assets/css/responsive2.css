@@ -6,20 +6,21 @@
         background-size: cover;
         overflow-y: auto;
     }
+}
 
     .wrapper {
         flex-direction: column;
         height: 100%;
     }
 
-    .banner {
+    .nav-wrapper {
         position: absolute;
         width: 100%;
         left: 0;
         margin: 0;
     }
 
-    .banner p {
+    .nav-wrapper p {
         position: absolute;
         display: flex;
         justify-content: center;
@@ -32,13 +33,13 @@
         margin: 0;
     }
 
-    .logo {
+    .logo-wrapper {
         margin-right: 0;
         padding: 5px;
         margin: 5px auto;
     }
 
-    .logo img {
+    .logo {
         width: 150px;
         max-width: 150px;
     }
@@ -55,7 +56,7 @@
         margin: 0;
     }
 
-    .nav .menu {
+    .nav .smoothscroll {
         position: absolute;
         left: 0;
         display: flex;
@@ -68,7 +69,7 @@
         margin: 0;
     }
 
-    .nav .menu ul {
+    .nav  ul {
         position: absolute;
         left: 0;
         display: flex;
@@ -81,7 +82,36 @@
         margin: 0;
     }
 
-    .nav .social-icons {
+    
+
+    .content-wrapper {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 5%;
+        text-align: center;
+        left: 0;
+        top: 0;
+        height: 100%;
+
+    }
+
+    .hero p {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 4em;
+    }
+
+    .text-2 {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 6em;
+    }
+
+.social-icons {
         position: relative;
         justify-content: space-between;
         text-align: center;
@@ -96,34 +126,7 @@
         padding: 4px;
     }
 
-    .content {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        padding: 5%;
-        text-align: center;
-        left: 0;
-        top: 0;
-        height: 100%;
-
-    }
-
-    .content .title {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        font-size: 4em;
-    }
-
-    .content .subtitle {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        font-size: 6em;
-    }
-
-    .buttons {
+    button {
         flex-direction: row;
         left: 0;
         top: 20%;
@@ -143,13 +146,13 @@
 /* Smaller mobile screens */
 @media (max-width: 640px) {
 
-    .banner {
+    .wrapper {
         top: 5%;
         padding: 5px;
 
     }
 
-    .banner p {
+    .nav p {
         letter-spacing: 4px;
         padding: 2px;
         margin: 2px;
@@ -162,46 +165,41 @@
         padding: 2px;
     }
 
-    .nav .menu {
+    .nav .smoothscroll {
         font-size: 1em;
         margin:0;
         padding: 0;
     }
 
-    .nav.menu ul {
+    .nav ul {
         margin: 0;
         padding: 0;
     }
 
-    .content {
+    .content-wrapper {
         position:absolute;
         height: 100%;
         top: 2%;
 
     }
 
-    .content .title {
+    .content .text {
         position: relative;
         font-size: 3em;
 
     }
 
-    .content .subtitle {
+    .content .text-2{
         font-size: 3.5em;
         margin-bottom: 50%;
     }
 
-    .buttons {
+    button {
         position: absolute;
         display: flex;
         bottom: 0;
         top: 50%;
         height: 100%;
-    }
-
-    .buttons .buttonA,
-    .buttons .buttonB {
-
         width: 160px;
         height: 75px;
         font-size: 1em;
