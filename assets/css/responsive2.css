@@ -43,7 +43,7 @@
         max-width: 150px;
     }
 
-    .navbar {
+    .nav {
         position: absolute;
         left: 0;
         top: 2%;
@@ -55,7 +55,7 @@
         margin: 0;
     }
 
-    .navbar .menu {
+    .nav .menu {
         position: absolute;
         left: 0;
         display: flex;
@@ -68,7 +68,7 @@
         margin: 0;
     }
 
-    .navbar .menu ul {
+    .nav .menu ul {
         position: absolute;
         left: 0;
         display: flex;
@@ -81,7 +81,7 @@
         margin: 0;
     }
 
-    .navbar .social-icons {
+    .nav .social-icons {
         position: relative;
         justify-content: space-between;
         text-align: center;
@@ -156,19 +156,19 @@
         font-size: 10px;
     }
 
-    .navbar {
+    .nav {
         top: 7%;
         z-index: 1;
         padding: 2px;
     }
 
-    .navbar .menu {
+    .nav .menu {
         font-size: 1em;
         margin:0;
         padding: 0;
     }
 
-    .navbar .menu ul {
+    .nav.menu ul {
         margin: 0;
         padding: 0;
     }
